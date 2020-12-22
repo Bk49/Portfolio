@@ -1,0 +1,214 @@
+@font-face {
+  font-family: articleFont;
+  src: url(fonts/TitilliumWeb-Regular.ttf)
+}
+
+@font-face {
+  font-family: aboutMeFont;
+  src: url(fonts/chathura-regular.ttf)
+}
+
+@font-face {
+  font-family: iAmFont;
+  src:url(fonts/Courier\ Prime.ttf)
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 634px;
+  width: 100%;
+  position: relative;
+}
+
+.img {
+  height: 634px;
+  width: 100%;
+  object-fit: cover;
+  /* height: 100%; */
+}
+
+.overlay {
+  filter: brightness(50%);
+}
+
+canvas {
+  width: 100%;
+}
+
+.canvasPara1 {
+  position: absolute;
+  color: #F2F2F2;
+  font-family:articleFont;
+  font-size: 21px;
+  padding: 8%;
+  padding-top: 40px;
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+
+  animation: textJump ease 4s ;
+}
+
+@keyframes textJump{
+  0% {opacity: 0; transform: translate(0,50px)}
+  100% {opacity: 1; transform: translate(0,0);}
+}
+
+.canvasTxt1 {
+  font-size:28px;
+}
+
+.canvasTxt2 {
+  font-size: 64px;
+}
+
+.canvasTxt3 {
+  color: #e3ca4b;
+}
+
+.linkTxt1 {
+  color: #00A3FF;
+  text-decoration: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 150px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 2%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+article {
+  font-family: articleFont;
+  padding: 8%;
+  color: #D3D3D3;
+}
+
+a.special {
+  color: #00A3FF;
+}
+
+.abtMeSection {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255,255,255, 0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.abtMeHeader {
+  margin: 20px;
+  font-family:aboutMeFont;
+  font-weight: 300;
+  letter-spacing: 15px;
+  text-align: center;
+  font-size: 70px;
+  color: #D3D3D3; 
+}
+
+.iamDiv {
+  text-align: center;
+}
+
+#iam, #typeWrite {
+  /* margin:0; */
+  font-family: iAmFont;
+  color: white;
+  text-align: center;
+}
+
+#iam {
+  font-size: 40px;
+}
+
+.bracket2 {
+  float: right;
+  margin-right: 20%;
+}
+
+.bracket1 {
+  float: left;
+  margin-left: 20%;
+}
+
+.bracket1, .bracket2 {
+  color: white;
+  display: inline;
+  font-size: 55px;
+}
+
+#typeWrite {
+  display: inline;
+  font-size: 65px;
+}
+
+#animated {
+  animation: blinker 0.6s linear infinite;
+}
+
+@keyframes blinker {
+  50% {opacity:0}
+}

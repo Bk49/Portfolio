@@ -1,0 +1,205 @@
+@font-face {
+    font-family: HeaderFont;
+    src:url(fonts/Hodgesonnormal-nRDrY.ttf);
+}
+
+@font-face {
+    font-family: FooterFont;
+    src: url(fonts/Raleway-Light.ttf)
+}
+
+html {
+    padding: 0;
+}
+
+body {
+    margin:0;
+    background-color: #272727;
+}
+
+nav {
+    background-color: black;
+    padding : 17px;
+    /* position: -webkit-sticky; */
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.top-nav-text {
+    margin: 0;
+    font-family: HeaderFont;
+    font-size: 20;
+    text-decoration: 0;
+    color: #EBEEF0;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+#home {
+    color: #00A3FF;
+}
+
+#contact {
+    float: right;
+}
+
+#footer {
+    padding: 15px;
+    padding-left: 10%;
+    margin-bottom: -15px;
+    background-image: linear-gradient(to right,#000000,#434343)
+}
+
+#contactMe {
+    color: #EBEEF0;
+    font-family: FooterFont;
+}
+
+.footerDiv{
+    display: inline-block;
+}
+
+.icon {
+    color: #ebeef0a9;
+    font-size: 75px;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;   
+}
+
+.subicon {
+    color: #ebeef0a9;
+    font-size: 20px;
+}
+
+#mail {
+    margin-bottom: 3px;
+}
+
+#discord {
+    margin-top: 3px;
+}
+
+#footerNote {
+    font-size: 10px;
+    color:rgba(255,255,255,0.4);
+}
+
+.emailTxt, .discordTxt, .telegramTxt {
+    font-family: HeaderFont;
+    font-size: 15px;
+    color: rgba(255,255,255,0.4);
+    padding: 3px;
+};
+
+#linkedIn {
+
+}
+
+#fB {
+
+}
+
+#tele {
+
+}
+
+/* Hover Effects */
+
+#linkedIn:hover {
+    cursor: pointer;
+    animation: forwards 0.5s linkedIn ease-in ;
+}
+
+@keyframes linkedIn {   
+    100% {
+        opacity: 1;
+        color: #0072B1;
+    }
+}
+
+#fB:hover {
+    cursor: pointer;
+    animation: forwards 0.5s facebook ease-in;
+}
+
+@keyframes facebook {
+    100% {
+        opacity: 1;
+        color:#4267B2;
+    }
+}
+
+#tele:hover, .telegramTxt:hover {
+    cursor: pointer;
+    animation: forwards 0.4s telegram ease-out;
+}
+
+@keyframes telegram {
+    100% {
+        opacity: 1;
+        color: #0088cc;
+    }
+}
+
+#mail:hover, .emailTxt:hover {
+    cursor: pointer;
+    animation: forwards 0.4s email ease-out;
+}
+
+@keyframes email {
+    100% {
+        opacity: 1;
+        color: #BB001B;
+    }
+}
+
+#discord:hover, .discordTxt:hover {
+    cursor: pointer;
+    animation: forwards 0.4s discord ease-out;
+}
+
+@keyframes discord {
+    100% {
+        opacity: 1;
+        color: #7289DA;
+    }
+}
+
+/* box to render alerts */
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #171717;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    opacity: 0.5;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: white;
+    opacity: 1;
+  }
