@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eric's Portfolio</title>
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/discordBot.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <nav class="sticky">
+            <a class="top-nav-text" href="home.html">Home</a>
+            <a class="top-nav-text" href="home.html#aboutMe">About</a>
+            <a class="top-nav-text" id="projects" href="#projects">Projects</a>
+            <a class="top-nav-text" id="contact" href="#footer">Contact</a>
+          </nav>
+
+          <footer id="footer">
+            <div class="footerDiv">
+              <h3 id="contactMe">Contact Me</h3>
+              <a id="linkedIn" class="icon fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/eric-ng-804209186/')"></a>
+              <a id="fB" class="icon fab fa-facebook-square" onclick="window.open('https://www.facebook.com/eric.ng.5494')"></a>
+          </div>
+            <div class="footerDiv">
+              <a onclick="copyToClipboard('.telegramTxt', 'Telegram username')" id="tele" class="subicon fab fa-telegram-plane"><span class="telegramTxt"> @DeviousComet</span></a><br>
+              <a onclick="copyToClipboard('.emailTxt', 'Email')" id="mail" class="subicon fas fa-envelope"><span class="emailTxt"> ericngyongwei@gmail.com</span></a><br>
+              <a onclick="copyToClipboard('.discordTxt', 'Discord tag')" id="discord" class="subicon fab fa-discord"><span class="discordTxt"> Bk49#8504</span></a>
+            </div>
+
+            <div id="render"></div>
+
+            <p id="footerNote">Subject is not for copy. Please let me know in advance if you are using the design. Thanks to flaticon for the icons used in the webpage</p>
+          </footer>
+          <script src="js/hover.js"></script>
+    </body>
+</html>
