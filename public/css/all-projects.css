@@ -1,0 +1,118 @@
+@font-face {
+    font-family: standardFont;
+    src: url(fonts/TitilliumWeb-Regular.ttf);
+}
+
+.body {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Header */
+
+.header {
+    margin: 20px 0 20px 0;
+}
+
+.subject-header {
+    margin: 0;
+    font-family: standardFont;
+    font-size: 64px;
+    font-weight: 300;
+    color: #f2f2f2;
+    display: inline;
+}
+
+.return {
+    display: inline;
+    font-family: standardFont;
+    font-size: 28px;
+    font-weight: 300;
+    color: #00A3FF;
+    text-decoration: none;
+    height: 100%;
+    float: right;
+    margin: 27.33px 0 27.33px 0 ;
+}
+
+.subject-img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* All Text */
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-family: standardFont;
+    font-size: 50px;
+    font-weight: 300;
+    color: #f2f2f2;
+}
+
+p {
+    font-family: standardFont;
+    font-size: 18px;
+    color: #D3D3D3;
+    text-align: center;
+}
+
+p.introductionTxt {
+    text-align: left;
+}
+
+h4 {
+    margin-top: 10px;
+    font-family: standardFont;
+    font-size: 38px;
+    font-weight: 300;
+    color: #F2F2F2;
+    opacity: 80%;
+}
+
+/* Section */
+
+.section-inline {
+    display: flex;
+    align-items: center;
+}
+
+.margin {
+    width: 100%;
+    height: 125px;
+}
+
+.img-left {
+    border-radius: 5px;
+    float: left;
+}
+
+.text-right {
+    float: right;
+    margin-left: 5%;
+}
+
+.img-right {
+    border-radius: 5px;
+    float: right;
+}
+
+.text-left {
+    float: left;
+    margin-right: 5%;
+}
+
+.linkTxt1 {
+    color: #00A3FF;
+}
+
+/* Hover effects */
+
+.linkTxt1:hover, .return:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
