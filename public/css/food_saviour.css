@@ -1,0 +1,31 @@
+.all-image {
+    margin: 5px;
+    border-radius: 5px;
+    width: 400px;
+    height: 276px;
+}
+
+.all-img-config {
+    width: 410px;
+    height: 286px;
+}
+
+.img1-config {
+    background-image: linear-gradient(to right, #4568DC, #B06AB3);
+}
+
+.img2-config {
+    background-image: linear-gradient(to right, #00d2ff, #928DAB);
+}
+
+.img3-config {
+    background-image: linear-gradient(to right, #2196f3, #f44336);
+}
+
+.img4-config {
+    background-image: linear-gradient(to right, #FF5F6D, #FFC371);
+}
+
+.img5-config {
+    background-image: linear-gradient(to right, #ff4b1f, #ff9068);
+}

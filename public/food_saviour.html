@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eric's Portfolio</title>
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/all-projects.css">
+        <link rel="stylesheet" href="./css/food_saviour.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <nav class="sticky">
+            <a class="top-nav-text" href="home.html">Home</a>
+            <a class="top-nav-text" href="home.html#aboutMe">About</a>
+            <a class="top-nav-text" id="projects" href="projects.html">Projects</a>
+            <a class="top-nav-text" id="contact" href="#footer">Contact</a>
+          </nav>
+          
+          <!-- Start coding from here -->
+
+          <div class="body">
+              <div class="header">
+                  <h1 class="subject-header">Food Saviour</h1>
+                  <a class="return" href="projects.html">&lt; Return to view all projects</a>
+              </div>
+              <img class="subject-img" src="./assets/Food_Saviour/Splash Screen.png">
+          
+              <div>
+                  <h2>Introduction</h2>
+                  <p class="introductionTxt">
+                      Food Saviour is a 3 person prototyping project. 
+                      It is for on of our academic module that focuses on creating user interfaces that fits the user requirements and is easy to navigate and use. 
+                      As we all know, if we create complex interfaces that users cannot navigate or contains broken navigation, the user simply cannot use it. 
+                      Therefore, Food Saviour is a project that aims to provide users with an easy to use interface as well as serves the purpose of the application that fits the user needs. 
+                      <br><br>
+                      The prototype for Food Savior is created using marvelapp. 
+                      Food Savior initially started as a mobile app prototype as we will be required to deal with the small screen that mobile devices provides to fully utilize the space in it. 
+                      The final prototype changes the application to be tablet based to cater for more features, functions and as well as efficient usage of the spaces that tablet provides.
+                  </p>
+              </div>
+
+              <h2>Features</h2>
+              <h4>Login</h4>
+              <div class="section-inline">
+                <div class="img-left all-img-config img1-config">
+                  <img class="all-image" src="./assets/Food_Saviour/Login Page.png">
+                </div>
+                <p class="text-right">
+                  Just like all applications, Food Savior also has a Login page as a landing page right after the splash screen (Refer to image above). 
+                  The user input their email and password to enter the application. 
+                  <br><br>
+                  For our prototype we only focus on food donater and food deliveryman. 
+                  The interface for admins and food donation receiver will operate in a totally separate application which is not yet developed. 
+                  <br><br>
+                  The register button also lies in the Login Page. 
+                  It will help facilitate food donation donor and deliveryman to register an account. 
+                </p>
+              </div>
+        <div class="margin"></div>
+        <h4>Delivery Page</h4>
+        <div class="section-inline">
+          <p class="text-left">
+            One of the highlighted features was the food delivery feature. 
+            It allows the user to choose which were the food delivery service required nearby. 
+            Volunteers can then help to deliver the food to the receivers doorstep. 
+            <br><br>
+            The delivery page shows the location to deliver to as well as a list of food to be deliver.
+          </p>
+          <div class="img-right all-img-config img2-config">
+            <img class="all-image" src="./assets/Food_Saviour/Delivery Page.png">
+          </div>
+        </div>
+        <div class="margin"></div>
+        <h4>To-Buy List</h4>
+        <div class="section-inline">
+          <div class="img-left all-img-config img3-config">
+            <img class="all-image" src="./assets/Food_Saviour/To-Buy List Page.png">
+          </div>
+          <p class="text-right">
+            We also included a feature for the users who wish to donate food to be able to directly use the app for their to-buy list. 
+            For the sake of convenience, the user can also input the food expiry date for them to keep a record of the expiry date for the food they buy. 
+          </p>
+        </div>
+  <div class="margin"></div>
+  <h4>Chats Page</h4>
+        <div class="section-inline">
+          <p class="text-left">
+            In order to handle the event of the deliveryman was unable to locate the unit to deliver to or any unwanted circumstances, the chats feature came in to overcome the issue. 
+            It allows the users to chat through it for important informations to pass through or any last minute cancellations. 
+          </p>
+          <div class="img-right all-img-config img4-config">
+            <img class="all-image" src="./assets/Food_Saviour/Chats Page.png">
+          </div>
+        </div>
+        <div class="margin"></div>
+        <h4>Account Page</h4>
+        <div class="section-inline">
+          <div class="img-left all-img-config img5-config">
+            <img class="all-image" src="./assets/Food_Saviour/Account Page.png">
+          </div>
+          <p class="text-right">
+           Last but not least the account page which allows the user to edit their account details and choose their prefered colour theme. 
+           This page also display the rating of the user by the food recipients and donation drives. 
+            <br><br>
+            That basically wraps up all the main features of the prototype. 
+            Want to know more? 
+            Check <a onclick="window.open('https://marvelapp.com/prototype/4b57g55')" class="linkTxt1">this</a> out.
+          </p>
+        </div>
+  <div class="margin"></div>
+            </div> <!-- End here -->
+
+    <footer id="footer">
+    <div class="footerDiv">
+      <h3 id="contactMe">Contact Me</h3>
+      <a id="linkedIn" class="icon fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/eric-ng-804209186/')"></a>
+      <a id="fB" class="icon fab fa-facebook-square" onclick="window.open('https://www.facebook.com/eric.ng.5494')"></a>
+  </div>
+    <div class="footerDiv">
+      <a onclick="copyToClipboard('.telegramTxt', 'Telegram username')" id="tele" class="subicon fab fa-telegram-plane"><span class="telegramTxt"> @DeviousComet</span></a><br>
+      <a onclick="copyToClipboard('.emailTxt', 'Email')" id="mail" class="subicon fas fa-envelope"><span class="emailTxt"> ericngyongwei@gmail.com</span></a><br>
+      <a onclick="copyToClipboard('.discordTxt', 'Discord tag')" id="discord" class="subicon fab fa-discord"><span class="discordTxt"> Bk49#8504</span></a>
+    </div>
+
+    <div id="render"></div>
+
+    <p id="footerNote">Subject is not for copy. Please let me know in advance if you are using the design. Thanks to flaticon for the icons used in the webpage</p>
+  </footer>
+  <script src="js/hover.js"></script>
+</body>
+</html>

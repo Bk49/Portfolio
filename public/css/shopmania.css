@@ -1,0 +1,125 @@
+.all-image {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.img1 {
+    width: 600px;
+    height: 276px;
+}
+
+.img1-config {
+    width: 610px;
+    height: 286px;
+    background-image: linear-gradient(to right, #4568DC, #B06AB3);
+}
+
+.img2 {
+    width: 550px;
+    height: 276px;
+}
+
+.img2-config {
+    width: 560px;
+    height: 286px;
+    background-image: linear-gradient(to right, #8A2387, #E94057, #F27121);
+}
+
+.img3 {
+    width: 600px;
+    height: 276px;
+}
+
+.img3-config {
+    width: 610px;
+    height: 286px;
+    background-image: linear-gradient(to right, #4568DC, #B06AB3);
+}
+
+.img4 {
+    width: 575px;
+    height: 276px;
+}
+
+.img4-config {
+    width: 585px;
+    height: 286px;
+    background-image: linear-gradient(to right, #FDC830, #F37335);
+}
+
+.img5 {
+    width: 600px;
+    height: 400px;
+}
+
+.img5-config {
+    width: 610px;
+    height: 410px;
+    background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
+}
+
+.img6 {
+    width: 600px;
+    height: 276px;
+}
+
+.img6-config {
+    width: 610px;
+    height: 286px;
+    background-image: linear-gradient(to right, #DA4453, #89216B);
+}
+
+.img7 {
+    width: 600px;
+    height: 276px;
+}
+
+.img7-config {
+    width: 610px;
+    height: 286px;
+    background-image: linear-gradient(to right, #bc4e9c, #f80759);
+}
+
+.img8 {
+    width: 600px;
+    height: 276px;
+}
+
+.img8-config {
+    width: 610px;
+    height: 286px;
+    background-image: linear-gradient(to right, #108dc7, #ef8e38);
+}
+
+.img9 {
+    width: 600px;
+    height: 276px;
+}
+
+.img9-config {
+    width: 610px;
+    height: 286px;
+    background-image: linear-gradient(to right, #FC5C7D, #6A82FB);
+}
+
+.img10 {
+    width: 400px;
+    height: 600px;
+}
+
+.img10-config {
+    width: 410px;
+    height: 610px;
+    background-image: linear-gradient(to right, #7F00FF, #E100FF);
+}
+
+.img11 {
+    width: 700px;
+    height: 400px;
+}
+
+.img11-config {
+    width: 710px;
+    height: 410px;
+    background-image: linear-gradient(to right, #3A1C71, #D76D77, #FFAF7B);
+}

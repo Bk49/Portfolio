@@ -4,7 +4,7 @@
         <title>Eric's Portfolio</title>
         <link rel="stylesheet" href="./css/global.css">
         <link rel="stylesheet" href="./css/all-projects.css">
-        <link rel="stylesheet" href="./css/discordBot.css">
+        <link rel="stylesheet" href="./css/shopmania.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -21,113 +21,172 @@
 
           <div class="body">
             <div class="header">
-              <h1 class="subject-header">Discord Bot</h1>
+              <h1 class="subject-header">Shopmania</h1>
               <a class="return" href="projects.html">&lt; Return to view all projects</a>
             </div>
-            <img class="subject-img" src="./assets/Discord/welcome.jpg">
+            <img class="subject-img" src="./assets/Shopmania/Home.png">
 
           <div>
             <h2>Introduction</h2><br>
-              <p class="introductionTxt">DeviousComet465 (currently a temporary name) was a discord bot that I’ve created after creating 2 of similar projects hosted on glitch.me. 
-                Unfortunately, due to change of policy of glitch, the project hosted there can no longer stay online and hosted 24/7 so I decided to move the project over to be used on repl.it which does not disable third party pinging applications such as Uptime Robot to ping the server every few seconds to keep the bot alive. 
-                The bot  is currently still under development and contains a few very basic features.</p>
+              <p class="introductionTxt">Shopmania was a pair programming work between me and one of my best teammate Khye Lerk's work
+                In this project, we were using MVC framework to create a dynamic web project which is a website that if used for e-commerce mainly selling computer accessories.
+                It is created using JSP pages, JavaBeans and MySQL database. 
+                The database is hosted on Heroku using the ClearDB to keep it running at all times.
+                <br><br>
+                Shopmania is also hosted on <a onclick="window.open('https://shopmaniajad.azurewebsites.net/JAD_CA2/GoProductDetail?productId=31')" class="linkTxt1">Azure</a>.
+                However due to some part of the project was not uploaded by my teammate, the website will contain a few broken links.
+              </p>
           
             <h2>Features</h2>
-            <h4>Avatar</h4>
+            <h4>Login and Home</h4>
                 <div class="section-inline">
                   <div class="img-left img1-config">
-                    <img class="all-image img1" src="./assets/Discord/avatarbot.png">
+                    <img class="all-image img1" src="./assets/Shopmania/Home.png">
                   </div>
                   <p class="text-right">
-                    By using the command !avatar bot, the user can get the bot’s details regarding its creator (which is me), the creation date as well as a quote. 
-                    The quote is obtained from an API that generates random quote. 
-                    All of these are achieved using discord.js library and using axios to perform a get for the quote. It is also made possible using Promise technique instead of the traditional callback technique.
+                    Start off with the home page which serves as a landing page for all the users.
+                    Public users need not to register or login to an account to start browsing for products. 
+                    <br><br>
+                    It contains all the product categories that the user can browse. 
+                    Below of it displays 10 random products selected from all the products available in the store.
                   </p>
                 </div>
           <div class="margin"></div>
                 <div class="section-inline">
                   <p class="text-left">
-                    The avatar command also  supports for user avatar. 
-                    The arguments will require the user to input their discord tag as well in order to get their discord account details such as their current status, time of creations of their Discord Account as well as if they were bot.
+                    From the home page, there will be a Login button at the top right corner where user can proceed to input their login details to login as a member or admin.
+                    The user will be redirected back to home page with the user session if the user is just a normal member.
+                    Admins will instead be redirected to an alternative admin page.
                     <br><br>
-                    Same thing goes with the quotes, it is using the same API.
-                    <br><br>
-                    An image of the user’s profile picture will also be displayed with a magnified size.
+                    For new users, they can also register for a new account at the login page with their details.
                   </p>
                   <div class="img-right img2-config">
-                    <img class="all-image img2" src="./assets/Discord/avataruser.png">
+                    <img class="all-image img2" src="./assets/Shopmania/login.png">
                   </div>
                 </div>
                 
                 <div class="margin"></div>
 
-                <h4>Help</h4>
+                <h4>Admin Pages</h4>
                 <div class="section-inline">
                   <div class="img-left img3-config">
-                    <img class="all-image img3" src="./assets/Discord/help1.png">
+                    <img class="all-image img3" src="./assets/Shopmania/admin-add.png">
                   </div>
                   <p class="text-right">
-                    In order to help new users of the bot to get to know of the commands provided by the bot, a dynamic help command is also available.
-                    <br><br>
-                    A development is currently on its way to paginate help commands since Discord can only allow up to 2000 characters per message.
+                    One of the administrator power is their ability to add new products, discount codes or users.
+                    Image at the left shows how the adminstrator can a new product using the website interface to input new rows into the database.
                   </p>
                 </div>
                 <div class="margin"></div>
                 <div class="section-inline">
                   <p class="text-left">
-                    Additionally, the user can  also search for a specific command that they need additional help by parsing the command name as a second argument.
+                    Admins can also use the website to modify and edit products that were previously in the database already and ammend them.
                     <br><br>
-                    This will show the command name, aliases (which can be used as the an alternative shorthand or name for the original command name).
-                    <br><br>
-                    It will also display the command usage method. 
-                    More details such as if the command is limited to DMs only or does it requires arguments or optional.
+                    Since every product come with their unique ID, their names can be changed to be the same as others as well and also treated as non-duplicated and separated objects.
+                    This can especially help on products with same names but comes in different conditions such as colors etc. which are treated as individual products.
                   </p>
                   <div class="img-right img4-config">
-                    <img class="all-image img4" src="./assets/Discord/helpavatar.png">
+                    <img class="all-image img4" src="./assets/Shopmania/admin-edit.png">
                   </div>
                 </div>
-
                 <div class="margin"></div>
-
-                <h4>Error Handling</h4>
                 <div class="section-inline">
                   <div class="img-left img5-config">
-                    <img class="all-image img5" src="./assets/Discord/errorargs.png">
+                    <img class="all-image img5" src="./assets/Shopmania/admin-delete.png">
                   </div>
                   <p class="text-right">
-                    Sometimes, the user might input the wrong arguments or use the command wrongly. 
-                    This is when error handling comes in to notify the user’s wrong usage of command and displays the right way of using it.
+                    The last important administrator power is their ability to delete products, discount codes and users in the database completely.
+                    <br><br>
+                    Since deleted items can no longer be retrieved again, to prevent accidental lost of data, a confirmation will be done to confirm with the admin whether to remain the items or not.
+                    It will display the target to be deleted to ensure it was the item to be deleted to prevent deleting of items that has similar or identical names.
                   </p>
                 </div>
                 <div class="margin"></div>
                 <div class="section-inline">
                   <p class="text-left">
-                    Error handling is also applied to commands such as play which requires the user to be in a channel and cannot be done in DMs.
+                    This image shows an overall look of the admin view.
+                    An important point to mention is regarding the security of the admin pages since it is in the same domain that can be accessed by the users.
                     <br><br>
-                    This is to let the user know the scope of the command is only around servers.
+                    Since prepared statements are used for the whole project, SQL injection is not possible. 
+                    The admin pages are also safe from Broken Access Control since for all the admin pages, the user session will be checked for the role first before being displayed. 
+                    If the user was a member, they will never make it to access these pages.
                   </p>
                   <div class="img-right img6-config">
-                    <img class="all-image img6" src="./assets/Discord/errordm.png">
+                    <img class="all-image img6" src="./assets/Shopmania/admin-view.png">
                   </div>
                 </div>
 
                 <div class="margin"></div>
-                <h4>Additional Features</h4>
+
+                <h4>Shopping</h4>
                 <div class="section-inline">
                   <div class="img-left img7-config">
-                    <img class="all-image img7" src="./assets/Discord/playmusic.png">
+                    <img class="all-image img7" src="./assets/Shopmania/view-products.png">
                   </div>
                   <p class="text-right">
-                    More new features such as !play are still being developed. 
-                    It can currently play songs in a voice channel and leave afterwards, but the play system only supports a youtube url at the moment and cannot queue musics.
-                    <br><br>
-                    Currently, I am working very hard to come out with a backend server that can implement a currency system as well as minigames such as blackjack. 
-                    Stay tune for more!
-                    <br><br>
-                    Click <a onclick="window.open('https://github.com/Bk49/DiscordBotTest')" class="linkTxt1">here</a> to contribute in the project!
+                   For all users, they can navigate throughout the website to check out all the products avaialble in Shopmania.
+                   <br><br>
+                   Items ranges from computer graphics card to gaming mouse pads.
                   </p>
                 </div>
                 <div class="margin"></div>
+                <div class="section-inline">
+                  <p class="text-left">
+                    Users with accounts will gain the ability to add items to their shopping cart and continue shop for other items. 
+                    It will show how many products of such type is already in the cart if the users already added at least one of them into the cart.
+                    <br><br>
+                    Each item before added into the cart will display its product details and price.
+                  </p>
+                  <div class="img-right img8-config">
+                    <img class="all-image img8" src="./assets/Shopmania/add-to-cart.png">
+                  </div>
+                </div>
+                <div class="margin"></div>
+                <div class="section-inline">
+                  <div class="img-left img9-config">
+                    <img class="all-image img9" src="./assets/Shopmania/view-cart.png">
+                  </div>
+                  <p class="text-right">
+                    After user has done shopping for products they've wanted they can move on to checkout their shopping cart. 
+                    Shopmania will display all the products they that is going to be checked out.
+                    The user can choose to remove the products here before continue with check out. 
+                    <br><br>
+                    This is also where the user can use the discount code to reduce the price to be paid.
+                  </p>
+                </div>
+                <div class="margin"></div>
+                <div class="section-inline">
+                  <p class="text-left">
+                    After the user check out, the purchase history will be saved. 
+                    The user can now proceed to make payment based on payment details they have previously made or create payment using new payment details. 
+                    By ticking the checkbox, they can park they payment details in the database to be used during their next purchase.
+                    <br><br>
+                    Since the shopping cart is session based, the user can choose to save the products to be bought in the purchase history to complete their payment afterwards when they want to.
+                    <br><br>
+                    It is also good to mentioned all payment details will be validated to be in the correct length or format before proceeding to make the payment and check out with the items.
+                  </p>
+                  <div class="img-right img10-config">
+                    <img class="all-image img10" src="./assets/Shopmania/checkout.png">
+                  </div>
+                </div>
+                
+                <div class="margin"></div>
+
+                <h4>Profile</h4>
+                <div class="section-inline">
+                  <div class="img-left img11-config">
+                    <img class="all-image img11" src="./assets/Shopmania/update-profile.png">
+                  </div>
+                  <p class="text-right">
+                    Last but not least the user can change their profile details by clicking at their profile icon.
+                    <br><br>
+                    From here, they can edit their name, email, profile picture and also their phone number.
+                    <br><br>
+                    That's basically it for Shopmania, want to check out the codes? Click <a onclick="window.open('https://github.com/Bk49/JAD_CA2')" class="linkTxt1">here</a>.
+                  </p>
+                </div>
+                <div class="margin"></div>
+                
                 <!-- End of contents -->
           </div>
           </div>
