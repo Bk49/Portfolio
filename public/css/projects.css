@@ -75,17 +75,17 @@
     height: 400px;
 }
 
-#intro1 {
+.intro1 {
     color: #F29993;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
-#main1 {
+.main1 {
     color: #F2635A;
     text-shadow: 3px 3px 15px black;
 }
 
-#description1 {
+.description1 {
     color: #fc5fc5;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
 }
@@ -99,7 +99,17 @@
     transform: scale(1.2);
 }
 
+.intro1-hover {
+    text-shadow: 0 0 2px #F29993;
+}
 
+.main1-hover {
+    text-shadow: 0 0 3px #F2635A;
+}
+
+.description1-hover  {
+    text-shadow: 0 0 5px #fc5fc5;
+}
 
 /* Shopmania Styles */
 
@@ -107,17 +117,17 @@
     height: 442px;
 }
 
-#intro2 {
+.intro2 {
     color: #6E7AEA;
     text-shadow: 2px 2px 3px black;
 }
 
-#main2 {
+.main2 {
     color: #92D879;
     text-shadow: 3px 3px 5px black;
 }
 
-#description2 {
+.description2 {
     color: #CEDE19;
     text-shadow: 2px 2px 3px black;
 }
@@ -131,6 +141,17 @@
     transform: scale(1.2);
 }
 
+.intro2-hover {
+    text-shadow: 0 0 3px #6E7AEA;
+}
+
+.main2-hover {
+    text-shadow: 0 0 3px #92D879;
+}
+
+.description2-hover {
+    text-shadow: 0 0 5px #CEDE19;
+}
 
 /* Food Savior Styles */
 
@@ -138,17 +159,17 @@
     height: 493px;
 }
 
-#intro3 {
+.intro3 {
     color: #985277;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
-#main3 {
+.main3 {
     color: #FF8C61;
     text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
 }
 
-#description3 {
+.description3 {
     color: #5C374C;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
@@ -160,4 +181,16 @@
 .bg3Hover {
     filter: brightness(50%);
     transform: scale(1.2);
+}
+
+.intro3-hover {
+    text-shadow: 0 0 2px #985277;
+}
+
+.main3-hover {
+    text-shadow: 0 0 3px #FF8C61;
+}
+
+.description3-hover {
+    text-shadow: 0 0 3px #975e7e;
 }
